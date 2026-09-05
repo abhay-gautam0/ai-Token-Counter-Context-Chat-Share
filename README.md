@@ -10,7 +10,7 @@ Currently designed for **ChatGPT**, with support for continuing conversations th
 
 ## 📸 Preview
 
-![Token Counter](screenshots/photo.png)
+![Token Counter](https://github.com/abhay-gautam0/ai-Token-Counter-Context-Chat-Share/blob/main/photo.png)
 
 ![Continue Panel](screenshots/photo1.png)
 
