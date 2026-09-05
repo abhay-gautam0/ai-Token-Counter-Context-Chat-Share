@@ -95,11 +95,14 @@ When a platform is selected, the extension:
 
 Besides token counting, the extension includes several tools for managing long conversations:
 
-       | Feature |                    | Purpose |
-| 📋 Copy Conversation |        |Copy the entire chat |
-| ✨ Continuation Prompt  |     |Generate a prompt for another AI |
-| 🧠 AI Summary Prompt |        |Create a structured handoff summary |
-| 💾 Download Chat |            |Save the conversation as a `.txt` file |
+| Feature | Purpose |
+|---|---|
+| 📋 Copy Conversation | Copy the entire chat |
+| ✨ Continuation Prompt | Generate a prompt for another AI |
+| 🧠 AI Summary Prompt | Create a structured handoff summary |
+| 💾 Download Chat | Save the conversation as a `.txt` file |
+
+These tools make it easy to preserve context instead of starting over whenever you switch chats or AI platforms.
 
 These tools make it easy to preserve context instead of starting over whenever you switch chats or AI platforms.
 
