@@ -36,9 +36,9 @@ The goal is to make long AI conversations easier to **track, transfer, and conti
 
 ---
 
-# ✨ Features
+#  Features
 
-## 🔢 Token Counter
+## Token Counter
 
 The extension estimates the number of tokens contained in the accessible conversation text.
 
@@ -50,13 +50,13 @@ Features include:
 - Automatic updates when the conversation changes
 - Handles dynamically loaded conversation messages
 
-## 📊 Live Interface
+## Live Interface
 
 The token counter appears directly inside the ChatGPT interface and updates automatically as the conversation grows.
 
 ---
 
-## 📈 Context Usage
+## Context Usage
 
 Instead of only showing the total number of tokens, the extension also estimates how much of the available conversation context has been used.
 
@@ -91,16 +91,16 @@ When a platform is selected, the extension:
 
 ---
 
-## 📋 Built-in Productivity Tools
+## Built-in Productivity Tools
 
 Besides token counting, the extension includes several tools for managing long conversations:
 
 | Feature | Purpose |
 |---|---|
-| 📋 Copy Conversation | Copy the entire chat |
-| ✨ Continuation Prompt | Generate a prompt for another AI |
-| 🧠 AI Summary Prompt | Create a structured handoff summary |
-| 💾 Download Chat | Save the conversation as a `.txt` file |
+| Copy Conversation | Copy the entire chat |
+| Continuation Prompt | Generate a prompt for another AI |
+| AI Summary Prompt | Create a structured handoff summary |
+| Download Chat | Save the conversation as a `.txt` file |
 
 These tools make it easy to preserve context instead of starting over whenever you switch chats or AI platforms.
 
