@@ -71,7 +71,7 @@ The progress indicator updates in real time and helps you decide when it's a goo
 
 ---
 
-## 🔄 Continue Conversation
+## Continue Conversation
 
 A dedicated **Continue** button is always available, allowing you to manually move the current conversation to another AI platform without waiting for the context to become full.
 
