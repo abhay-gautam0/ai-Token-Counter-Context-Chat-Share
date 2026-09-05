@@ -53,12 +53,6 @@ Features include:
 
 The token counter appears directly inside the ChatGPT interface and updates automatically as the conversation grows.
 
-> **Screenshots:** Replace these placeholders with your own images after uploading them to the repository.
-
-| Token Counter | Continue Panel |
-|---|---|
-| ![Token Counter](screenshots/token-counter.png) | ![Continue Panel](screenshots/continue-panel.png) |
-
 ---
 
 ## 📈 Context Usage
