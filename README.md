@@ -8,10 +8,11 @@ Currently designed for **ChatGPT**, with support for continuing conversations th
 
 ---
 
-## 📸 Preview
+## Token Counter
 
 ![Token Counter](https://github.com/abhay-gautam0/ai-Token-Counter-Context-Chat-Share/blob/main/photo.png)
 
+## Continue Panel
 ![Continue Panel](https://github.com/abhay-gautam0/ai-Token-Counter-Context-Chat-Share/blob/main/photo1.png)
 
 ## Overview
