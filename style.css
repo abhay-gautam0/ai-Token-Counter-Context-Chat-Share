@@ -1,0 +1,537 @@
+/* =========================================================
+   MAIN TOKEN BAR
+   ========================================================= */
+
+#ai-token-tally {
+    position: fixed;
+
+    top: 20px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 760px;
+    height: 42px;
+
+    background: #151515;
+
+    border: 1px solid #3a3a3a;
+
+    border-radius: 6px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 14px;
+
+    box-sizing: border-box;
+
+    color: #d0d0d0;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 12px;
+
+    z-index: 999999;
+
+    transition:
+        border-color 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+/* =========================================================
+   LEFT
+   ========================================================= */
+
+.att-left {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    white-space: nowrap;
+}
+
+.att-icon {
+    font-size: 13px;
+}
+
+.att-title {
+    font-size: 11px;
+
+    letter-spacing: 1px;
+
+    color: #aaaaaa;
+}
+
+.att-percent {
+    font-size: 14px;
+
+    color: #eeeeee;
+}
+
+
+/* =========================================================
+   PROGRESS
+   ========================================================= */
+
+.att-progress {
+    flex: 1;
+
+    height: 18px;
+
+    margin: 0 15px;
+
+    display: flex;
+
+    align-items: center;
+
+    position: relative;
+}
+
+.att-line {
+    width: 100%;
+
+    height: 2px;
+
+    background: #777;
+}
+
+.att-dot {
+    width: 9px;
+    height: 9px;
+
+    background: #eeeeee;
+
+    border-radius: 50%;
+
+    position: absolute;
+
+    left: 0;
+
+    z-index: 2;
+
+    transition:
+        left 0.3s ease;
+}
+
+
+/* =========================================================
+   TOKEN COUNT
+   ========================================================= */
+
+.att-tokens {
+    white-space: nowrap;
+
+    color: #d0a85c;
+}
+
+
+/* =========================================================
+   SETTINGS
+   ========================================================= */
+
+.att-settings {
+    margin-left: 14px;
+
+    width: 28px;
+    height: 28px;
+
+    background: transparent;
+
+    border: 1px solid #444;
+
+    border-radius: 5px;
+
+    color: #aaa;
+
+    cursor: pointer;
+}
+
+.att-settings:hover {
+    color: white;
+
+    border-color: #777;
+}
+
+
+/* =========================================================
+   NORMAL
+   ========================================================= */
+
+.att-normal {
+    border-color: #3a3a3a;
+}
+
+
+/* =========================================================
+   WARNING
+   ========================================================= */
+
+.att-warning {
+    border-color: #8a6d2f;
+
+    box-shadow:
+        0 0 8px rgba(
+            180,
+            140,
+            50,
+            0.15
+        );
+}
+
+
+/* =========================================================
+   HIGH
+   ========================================================= */
+
+.att-high {
+    border-color: #9b4d2e;
+
+    box-shadow:
+        0 0 10px rgba(
+            190,
+            80,
+            40,
+            0.2
+        );
+}
+
+
+/* =========================================================
+   CRITICAL
+   ========================================================= */
+
+.att-critical {
+    border-color: #a83232;
+
+    box-shadow:
+        0 0 12px rgba(
+            190,
+            40,
+            40,
+            0.25
+        );
+
+    animation:
+        attPulse 1.5s
+        ease-in-out
+        infinite;
+}
+
+
+@keyframes attPulse {
+
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.78;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* =========================================================
+   CONTINUE BUTTON
+   ========================================================= */
+
+#att-continue-button {
+
+    position: fixed;
+
+    top: 72px;
+
+    left: 50%;
+
+    transform:
+        translateX(-50%);
+
+    background: #191919;
+
+    color: #e8e8e8;
+
+    border: 1px solid #555;
+
+    border-radius: 6px;
+
+    padding:
+        8px 16px;
+
+    font-size: 12px;
+
+    cursor: pointer;
+
+    z-index: 999998;
+
+    box-shadow:
+        0 5px 20px
+        rgba(0, 0, 0, 0.4);
+
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease;
+}
+
+
+#att-continue-button:hover {
+
+    background: #242424;
+
+    border-color: #888;
+}
+
+
+/* =========================================================
+   CONTINUE PANEL
+   ========================================================= */
+
+#att-continue-panel {
+
+    position: fixed;
+
+    top: 125px;
+
+    left: 50%;
+
+    transform:
+        translateX(-50%);
+
+    width: 700px;
+
+    background: #111111;
+
+    border:
+        1px solid #414141;
+
+    border-radius: 9px;
+
+    padding: 18px;
+
+    box-sizing: border-box;
+
+    z-index: 1000000;
+
+    box-shadow:
+        0 15px 50px
+        rgba(0, 0, 0, 0.65);
+
+    color: #eeeeee;
+
+    font-family: Arial, sans-serif;
+}
+
+
+/* =========================================================
+   PANEL HEADER
+   ========================================================= */
+
+.att-panel-header {
+
+    display: flex;
+
+    justify-content:
+        space-between;
+
+    align-items:
+        flex-start;
+}
+
+
+.att-panel-title {
+
+    font-size: 13px;
+
+    letter-spacing: 1.3px;
+
+    font-weight: bold;
+
+    color: #eeeeee;
+}
+
+
+.att-panel-subtitle {
+
+    margin-top: 6px;
+
+    font-size: 11px;
+
+    color: #888888;
+
+    line-height: 1.4;
+}
+
+
+.att-panel-close {
+
+    width: 28px;
+    height: 28px;
+
+    border:
+        1px solid #444;
+
+    background:
+        transparent;
+
+    color: #aaa;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    font-size: 18px;
+}
+
+
+.att-panel-close:hover {
+
+    color: white;
+
+    border-color: #777;
+}
+
+
+/* =========================================================
+   PLATFORMS
+   ========================================================= */
+
+.att-platforms {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 9px;
+
+    margin-top: 18px;
+}
+
+
+.att-platform {
+
+    height: 58px;
+
+    background: #1a1a1a;
+
+    border:
+        1px solid #3c3c3c;
+
+    border-radius: 6px;
+
+    color: #dddddd;
+
+    cursor: pointer;
+
+    font-size: 12px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 7px;
+
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease;
+}
+
+
+.att-platform:hover {
+
+    background: #252525;
+
+    border-color: #777;
+}
+
+
+.att-platform span {
+
+    font-size: 15px;
+}
+
+
+/* =========================================================
+   DIVIDER
+   ========================================================= */
+
+.att-panel-divider {
+
+    height: 1px;
+
+    background: #292929;
+
+    margin:
+        18px 0;
+}
+
+
+/* =========================================================
+   ACTION BUTTONS
+   ========================================================= */
+
+.att-panel-actions {
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr 1fr;
+
+    gap: 10px;
+}
+
+
+.att-action {
+
+    flex: 1;
+
+    height: 42px;
+
+    background: #181818;
+
+    border:
+        1px solid #3d3d3d;
+
+    border-radius: 6px;
+
+    color: #cccccc;
+
+    cursor: pointer;
+
+    font-size: 12px;
+}
+
+
+.att-action:hover {
+
+    background: #232323;
+
+    border-color: #777;
+
+    color: white;
+}
+
+
+/* =========================================================
+   STATUS
+   ========================================================= */
+
+.att-copy-status {
+
+    min-height: 16px;
+
+    margin-top: 12px;
+
+    text-align: center;
+
+    font-size: 11px;
+
+    color: #9a9a9a;
+}

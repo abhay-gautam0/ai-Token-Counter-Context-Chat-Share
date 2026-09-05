@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "AI Token Tally",
+  "version": "1.0.0",
+  "description": "Shows estimated AI chat token usage.",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://chatgpt.com/*",
+        "https://chat.openai.com/*"
+      ],
+      "js": [
+        "tokenizer-bundle.js",
+        "content.js"
+      ],
+      "css": [
+        "style.css"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}

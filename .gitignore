@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+
+# Qodo / AI coding tool
+.qodo/
+
+# VS Code settings
+.vscode/
+
+# Logs
+*.log
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
