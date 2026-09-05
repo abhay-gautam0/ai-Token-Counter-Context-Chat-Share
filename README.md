@@ -12,7 +12,7 @@ Currently designed for **ChatGPT**, with support for continuing conversations th
 
 ![Token Counter](https://github.com/abhay-gautam0/ai-Token-Counter-Context-Chat-Share/blob/main/photo.png)
 
-![Continue Panel](screenshots/photo1.png)
+![Continue Panel](https://github.com/abhay-gautam0/ai-Token-Counter-Context-Chat-Share/blob/main/photo1.png)
 
 ## Overview
 
