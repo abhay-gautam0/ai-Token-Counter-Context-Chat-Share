@@ -38,7 +38,17 @@ The goal is to make long AI conversations easier to **track, transfer, and conti
 
 #  Features
 
+## Token Counter
 
+The extension estimates the number of tokens contained in the accessible conversation text.
+
+Features include:
+
+- Real-time token estimation
+- `o200k_base` tokenization
+- Token count displayed directly in ChatGPT
+- Automatic updates when the conversation changes
+- Handles dynamically loaded conversation messages
 
 ## Live Interface
 
