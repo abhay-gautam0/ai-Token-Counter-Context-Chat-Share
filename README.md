@@ -108,7 +108,19 @@ These tools make it easy to preserve context instead of starting over whenever y
 
 ---
 
+# Installation for Development
 
+1. Install Node.js.
+2. Open the project folder in VS Code.
+3. Open the terminal.
+4. Install dependencies:
+   npm install
+5. Build the tokenizer:
+   npx esbuild tokenizer-entry.js --bundle --format=iife --outfile=tokenizer-bundle.js
+6. Open Chrome.
+7. Go to:
+   chrome://extensions
+8. Enable Developer mode.
 9. Click "Load unpacked".
 10. Select the project folder.
 11. Open ChatGPT and test the extension.
